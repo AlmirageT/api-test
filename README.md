@@ -54,6 +54,9 @@ POST [http://127.0.0.1/api/login](http://127.0.0.1/api/login)
 ### ejemplo de respuesta
 
 devolvera un Bearer token para poder entrar a las rutas protegidas, CRUD posts
+
+###
+
 "token": "37|r1gzJXJrcxSLf3WgglVbaQKfQRJF8iEoeQ97vrV",
 "user": {
 "id": 7836,
@@ -67,14 +70,23 @@ devolvera un Bearer token para poder entrar a las rutas protegidas, CRUD posts
 ### links para CRUD de posts
 
 GET [http://127.0.0.1/api/posts/](http://127.0.0.1/api/posts/)
+
+###
+
 POST [http://127.0.0.1/api/posts/](http://127.0.0.1/api/posts/) con data en el body
 {
 "title": "test",
 "body": "prueba por postman"
 }
+
+###
+
 PATCH [http://127.0.0.1/api/posts/{id}](http://127.0.0.1/api/posts/{id}) con data en el body
 {
 "title": "test updated",
 "body": "prueba de updated por postman"
 }
+
+###
+
 DELETE [http://127.0.0.1/api/posts/{id}]
